@@ -17,11 +17,12 @@ public class Tema {
 	
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private long id_tema;
+		private long idTema;
+		
 		
 		@NotNull
 		@Size(min = 5, max = 40, message = "O número mínimo de caracteres é 5 e o máximo 40.")
-		private String nome_tema;
+		private String nomeTema;
 		
 		@NotNull
 		@Size (min = 10 , max = 300, message = "O número mínimo de caracteres é 10 e o máximo é 300.")
@@ -29,23 +30,22 @@ public class Tema {
 		
 		@NotNull
 		@Size (min = 10, max = 255, message = "O número mínimo de caracteres é 10 e o máximo é 255.")
-		private String img_devs;
+		private String imgDevs;
 		
-		
-		public long getId_tema() {
-			return id_tema;
+		public long getIdTema() {
+			return idTema;
 		}
 
-		public void setId_tema(long id_tema) {
-			this.id_tema = id_tema;
+		public void setIdTema(long idTema) {
+			this.idTema = idTema;
 		}
 
-		public String getNome_tema() {
-			return nome_tema;
+		public String getNomeTema() {
+			return nomeTema;
 		}
 
-		public void setNome_tema(String nome_tema) {
-			this.nome_tema = nome_tema;
+		public void setNomeTema(String nomeTema) {
+			this.nomeTema = nomeTema;
 		}
 
 		public String getSobre() {
@@ -56,15 +56,14 @@ public class Tema {
 			this.sobre = sobre;
 		}
 
-		public String getImg_devs() {
-			return img_devs;
+		public String getImgDevs() {
+			return imgDevs;
 		}
 
-		public void setImg_devs(String img_devs) {
-			this.img_devs = img_devs;
+		public void setImgDevs(String imgDevs) {
+			this.imgDevs = imgDevs;
 		}
 
-				
 		
-	}
-
+}		
+		
