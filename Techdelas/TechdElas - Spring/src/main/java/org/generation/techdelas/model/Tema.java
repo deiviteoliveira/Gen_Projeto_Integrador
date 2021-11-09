@@ -20,15 +20,15 @@ public class Tema {
 		private long idTema;
 		
 		
-		@NotNull
+		@NotNull(message = "Ops! O campo tema NÃO pode ficar nulo")
 		@Size(min = 5, max = 40, message = "O número mínimo de caracteres é 5 e o máximo 40.")
 		private String nomeTema;
 		
-		@NotNull
+		@NotNull(message = "Ops! O campo sobre NÃO pode ficar nulo")
 		@Size (min = 10 , max = 300, message = "O número mínimo de caracteres é 10 e o máximo é 300.")
 		private String sobre;
 		
-		@NotNull
+		@NotNull(message = "Ops! O campo img_devs NÃO pode ficar nulo")
 		@Size (min = 10, max = 255, message = "O número mínimo de caracteres é 10 e o máximo é 255.")
 		private String imgDevs;
 		
